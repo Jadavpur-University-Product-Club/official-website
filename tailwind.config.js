@@ -7,11 +7,23 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      fontFamily : {
+        'bruno-ace-sc': ['Bruno Ace SC'],
+        'open-sans': ['Open Sans'],
+        'montserrat': ['Montserrat']
       },
+      colors: {
+        "nav-background": "#101024",
+        "nav-text": "#FFFFFF",
+        "nav-menu-text": "#A4A4A4",
+        "website-background": "#090909",
+        "website-text": "#FFFFFF",
+        "header-color-1": "#FFFFFF",
+        "header-color-2": "#179DEB",
+        "line-color-1": "#FFFFFF",
+        "line-color-2": "#FFC908",
+        "newsletter-backfround":"#17184B"
+      }
     },
   },
   plugins: [],
