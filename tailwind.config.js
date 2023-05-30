@@ -22,7 +22,8 @@ module.exports = {
         "header-color-2": "#179DEB",
         "line-color-1": "#FFFFFF",
         "line-color-2": "#FFC908",
-        "newsletter-backfround":"#17184B"
+        "newsletter-backfround":"#17184B",
+        "product-card-btn-active": "#0E0B5B"
       }
     },
   },
