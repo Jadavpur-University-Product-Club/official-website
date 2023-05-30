@@ -30,11 +30,11 @@ export default function NavBar() {
           <span>
             <Image
               src={logo}
-              height={50}
+              className='h-[40px] w-[40px] md:h-[50px] md:w-[50px]'
               alt='logo'
             />
           </span>
-          <span className="font-bold font-open-sans">JU PRODUCT<br></br>CLUB</span>
+          <span className="font-bold font-open-sans text-sm md:text-base">JU PRODUCT<br></br>CLUB</span>
         </div>
         <div className="hidden lg:block">
           <ul className="inline-flex space-x-8">

@@ -24,12 +24,12 @@ export default function Header() {
             <div className="absolute bg-black opacity-70 inset-0 -z-10"></div>
             {/* Text */}
             <div className="absolute z-0">
-                <p className="font-bruno-ace-sc text-9xl text-header-color-1">LET'S <span className="text-header-color-2">B</span>UILD</p>
+                <p className="font-bruno-ace-sc text-4xl md:text-9xl text-header-color-1 text-center">LET'S <span className="text-header-color-2">B</span>UILD</p>
             </div>
             {/* Mouse */}
             <div className="absolute bottom-10 flex flex-col items-center">
-                <Mouse size={48} color="#fff" className="mb-3 animate-bounce" />
-                <p>scroll for more</p>
+                <Mouse  color="#fff" className="mb-3 animate-bounce" size={48} />
+                <p className="text-sm md:text-base">scroll for more</p>
             </div>
         </div>
         </>
