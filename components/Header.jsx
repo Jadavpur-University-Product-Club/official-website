@@ -17,7 +17,7 @@ export default function Header() {
                     loop={true}
                     controls={false}
                     src="https://assets8.lottiefiles.com/packages/lf20_YN73eT.json"
-                    style={{ height: '800px', width: '800px' }}
+                    style={{ height: '100%', width: '100%' }}
                 ></Player> 
             </div>
             {/* Background overlay */}

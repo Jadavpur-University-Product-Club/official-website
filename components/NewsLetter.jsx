@@ -1,8 +1,8 @@
 export default function NewsLetter() {
   return (
     <>
-      <div class="flex w-full flex-col items-center justify-center bg-newsletter-backfround py-8 space-y-10">
-        <p class="text-center font-montserrat text-4xl">
+      <div className="flex w-full flex-col items-center justify-center bg-newsletter-backfround py-8 space-y-10">
+        <p className="text-center font-montserrat text-4xl">
           Subscribe To Newsletter
         </p>
         <div className="flex rounded-full border-2 border-white p-1.5 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50">
