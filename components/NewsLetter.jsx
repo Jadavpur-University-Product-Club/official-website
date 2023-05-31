@@ -5,7 +5,6 @@ export default function NewsLetter() {
 
   async function submitFormHelper(e) {
     const form = new FormData(e.target);
-    form.append("category", "Newsletter Subscription");
     form.append("name", "");
     const res = await fetch("https://script.google.com/macros/s/AKfycbzpADqCc20VHjnD8YwN-_ar5cS0E2T8kIVfyqB4nacPHAkQCYhPMXY_VZFuSg2nIxeb/exec", {
       method: "POST",

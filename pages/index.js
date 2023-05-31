@@ -14,7 +14,7 @@ export default function Home() {
         <Products />
 
         <Join />
-        {/* <Contact /> */}
+        <Contact />
         <NewsLetter />
     </>
     );

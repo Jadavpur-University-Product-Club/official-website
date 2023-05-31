@@ -22,7 +22,7 @@ const menuItems = [
   },
   {
     name: 'Contact Us',
-    href: '#',
+    href: '#contact_us',
   },
 ]
 
