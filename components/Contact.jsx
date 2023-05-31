@@ -4,7 +4,6 @@ import { toast } from "react-hot-toast";
 export default function Contact() {
   async function submitFormHelper(e) {
     const form = new FormData(e.target);
-    form.append("name", "");
     const res = await fetch(
       "https://script.google.com/macros/s/AKfycbxLmjkP641pU97aMMpLUyMydQWbE5mIt0fO2BFI_ITZbZRFZke5l9vDi4ETM3R4QxjK/exec",
       {
