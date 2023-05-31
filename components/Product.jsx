@@ -1,19 +1,19 @@
 import Image from "next/image";
 
-export default function Product({id}){
+export default function Product({id, title, image_url}){
     return (
         <>
             <div className="w-fit  p-2" id={id}>
                 {/* Product Div */}
                 <div className="w-[75vw] h-[75vw]  md:w-[300px] md:h-[300px] overflow-hidden rounded-2xl border border-slate-400 relative">
                     <Image
-                        src="https://img.freepik.com/free-vector/gradient-geometric-shapes-dark-background-design_23-2148433740.jpg"
+                        src={image_url}
                         alt="Product Image"
                         className="object-cover w-[75vw] h-[75vw]  md:w-[300px] md:h-[300px] rounded-2xl"
                         fill
                     />
                     <div className="absolute bottom-0 left-0 right-0 h-1/6 md:h-1/4 bg-black bg-opacity-70 font-open-sans font-semibold text-base md:text-xl flex justify-center items-center">
-                        Product Demo
+                        {title}
                     </div>
                 </div>
 

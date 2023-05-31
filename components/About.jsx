@@ -4,7 +4,7 @@ import UnderLine from './UnderLine'
 export default function About(){
   return (
     <>
-      <div className='flex flex-col items-center py-8'>
+      <div className='flex flex-col items-center py-8' id='about_us'>
         <div className="flex flex-col items-center justify-center w-5/6 md:w-3/6">
             <div className="max-w-fit">                
                 <p className="text-2xl md:text-4xl font-bold text-center font-montserrat">About Us</p>

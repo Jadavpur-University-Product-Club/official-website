@@ -6,15 +6,19 @@ import logo from "@/assets/image/logo.png"
 const menuItems = [
   {
     name: 'About Us',
-    href: '#',
+    href: '#about_us',
   },
   {
     name: 'Products',
-    href: '#',
+    href: '#products',
   },
   {
     name: 'Join Us',
-    href: '#',
+    href: '#join_us',
+  },
+  {
+    name: 'Newsletter',
+    href: '#newsletter',
   },
   {
     name: 'Contact Us',
