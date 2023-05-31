@@ -6,16 +6,17 @@ import Contact from "@/components/Contact";
 import NewsLetter from "@/components/NewsLetter";
 import Products from "@/components/Products";
 import Product from "@/components/Product";
+import Footer from "@/components/Footer";
 export default function Home() {
     return (
     <>
         <Header />
         <About />
         <Products />
-
         <Join />
         <Contact />
         <NewsLetter />
+        <Footer />
     </>
     );
 }
