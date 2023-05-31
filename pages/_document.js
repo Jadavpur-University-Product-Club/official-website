@@ -11,6 +11,7 @@ export default function Document() {
       <body className='bg-website-background text-website-text'>
         <Main />
         <NextScript />
+        <title>JU Product Club</title>
       </body>
     </Html>
   )
