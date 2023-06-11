@@ -1,6 +1,16 @@
 import Image from "next/image";
+import { useState } from 'react'
 
-export default function Product({id, title, image_url}){
+import ProductModal from "./ProductModal";
+
+export default function Product({id, title, description, image_url, video_url}){    
+  const [isOpen, setIsOpen] = useState(false);
+
+  
+  function openModal() {
+    setIsOpen(true)
+  }
+
     return (
         <>
             <div className="w-fit  p-2" id={id}>
@@ -18,9 +28,14 @@ export default function Product({id, title, image_url}){
                 </div>
 
                 {/* Button */}
-                <button className="mt-4 md:mt-5 bg-white py-2 md:py-3 w-full rounded-full text-product-card-btn-active text-base md:text-xl font-open-sans font-semibold">
+                <button 
+                className="mt-4 md:mt-5 bg-white py-2 md:py-3 w-full rounded-full text-product-card-btn-active text-base md:text-xl font-open-sans font-semibold"
+                onClick={openModal}
+                >
                     Explore Now
                 </button>
+
+                <ProductModal isOpen={isOpen} setIsOpen={setIsOpen} id={id} title={title} description={description} video_url={video_url} />
                     
             </div>
         </>
