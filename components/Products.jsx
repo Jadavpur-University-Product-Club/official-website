@@ -15,7 +15,7 @@ export default function Products() {
         </div>
         <div className="flex flex-wrap flex-row items-center justify-center overflow-hidden w-full md:w-4/6 gap-6 pt-8">
           {
-            products.map((ele, idx) => <Product id={"p"+idx} key={idx} title={ele.title} image_url={ele.image_url} />)
+            products.map((ele, idx) => <Product id={"p"+idx} key={idx} title={ele.title} description={ele.description} image_url={ele.image_url} video_url={ele.video_url}/>)
           }
         </div>
       </div>

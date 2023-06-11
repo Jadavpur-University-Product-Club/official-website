@@ -3,18 +3,21 @@
         "title": "XYZ",
         "description": "XYZ",
         "image_url": "https://img.freepik.com/free-vector/gradient-geometric-shapes-dark-background-design_23-2148433740.jpg",
+        "video_url": "https://www.youtube.com/embed/2U-hxbaDi90",
         "product_url": "/"
     },
     {
         "title": "ABC",
         "description": "XYZ",
         "image_url": "https://img.freepik.com/free-vector/gradient-geometric-shapes-dark-background-design_23-2148433740.jpg",
+        "video_url": "https://www.youtube.com/embed/2U-hxbaDi90",
         "product_url": "/"
     },
     {
         "title": "PQR",
         "description": "XYZ",
         "image_url": "https://img.freepik.com/free-vector/gradient-geometric-shapes-dark-background-design_23-2148433740.jpg",
+        "video_url": "https://www.youtube.com/embed/2U-hxbaDi90",
         "product_url": "/"
     }
 ]
