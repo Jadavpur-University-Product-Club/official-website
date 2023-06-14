@@ -35,7 +35,7 @@ export default function Contact() {
         <form action="#" className="space-y-8" onSubmit={submitForm}>
           <div>
             <label
-              for="email"
+              htmlFor="email"
               className="mb-2 block text-sm font-medium text-gray-50"
             >
               Your email
@@ -51,7 +51,7 @@ export default function Contact() {
           </div>
           <div>
             <label
-              for="subject"
+              htmlFor="subject"
               className="font-medium text-gray-50 mb-2 block text-sm"
             >
               Subject
@@ -67,7 +67,7 @@ export default function Contact() {
           </div>
           <div className="sm:col-span-2">
             <label
-              for="message"
+              htmlFor="message"
               className="mb-2 block text-sm font-medium text-gray-50"
             >
               Your message
