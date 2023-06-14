@@ -13,83 +13,21 @@ export default function Products() {
                 <UnderLine />                
             </div>
         </div>
-        {/* <div className="flex flex-wrap flex-row items-center justify-center overflow-hidden w-full md:w-4/6 gap-6 pt-8">
-          {
-            products.map((ele, idx) => <Product id={"p"+idx} key={idx} title={ele.title} description={ele.description} image_url={ele.image_url} video_url={ele.video_url}/>)
-          }
-        </div> */}
-        {/* <!-- component --> */}
-        <div class=" mt-4 container bg-black mx-auto w-full h-full">
-          <div class="relative wrap overflow-hidden p-10 h-full">
-            <div class="border-2-2 absolute border-opacity-20 border-white-700 h-full border" style={{left: 50+"%"}}></div>
-            {/* <!-- right timeline --> */}
-            {
-              products.map((ele, idx) => 
-              (idx % 2) ? 
-              <div class="mb-8 flex justify-between flex-row-reverse items-center w-full right-timeline">
-                <div class="order-1 w-5/12"></div>
-                <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
-                  <h1 class="mx-auto font-semibold text-lg text-white">{idx+1}</h1>
-                </div>
-                <div class="order-1 bg-gray-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
-                  <h3 class="mb-3 font-bold text-gray-800 text-xl">{ele.title}</h3>
-                  <iframe className='w-full h-56 rounded-lg mb-3' src={ele.video_url} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                  {/* <p class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">{ele.description}</p> */}
-                </div>
+        {/* <!-- timeline component --> */}
+        <ol className=" mt-6 relative border-l border-gray-200 dark:border-gray-700">   
+        {
+          products.map((ele, idx) => 
+            <li className="mb-10 ml-6" key={idx}>            
+              <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+                <h1 className="mx-auto font-semibold text-lg text-white">{idx+1}</h1>
+              </span>
+              <div className="items-center justify-between p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:flex dark:bg-gray-700 dark:border-gray-600">
+                <iframe className='w-[75vw] h-56 md:w-[50vw] md:h-[30vw] rounded-lg mb-3' src={ele.video_url} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
               </div>
-              :
-              <div class="mb-8 flex justify-between items-center w-full left-timeline">
-                <div class="order-1 w-5/12"></div>
-                <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
-                  <h1 class="mx-auto text-white font-semibold text-lg">{idx+1}</h1>
-                </div>
-                <div class="order-1 bg-red-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
-                  <h3 class="mb-3 font-bold text-white text-xl">{ele.title}</h3>
-                  <iframe className='w-full h-56 rounded-lg mb-3' src={ele.video_url} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                  {/* <p class="text-sm font-medium leading-snug tracking-wide text-white text-opacity-100">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> */}
-                </div>
-              </div>
-
-            )}
-
-            {/* <!-- left timeline -->
-            <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
-              <div class="order-1 w-5/12"></div>
-              <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
-                <h1 class="mx-auto text-white font-semibold text-lg">2</h1>
-              </div>
-              <div class="order-1 bg-red-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
-                <h3 class="mb-3 font-bold text-white text-xl">Lorem Ipsum</h3>
-                <p class="text-sm font-medium leading-snug tracking-wide text-white text-opacity-100">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-              </div>
-            </div>
-            
-            <!-- right timeline -->
-            <div class="mb-8 flex justify-between items-center w-full right-timeline">
-              <div class="order-1 w-5/12"></div>
-              <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
-                <h1 class="mx-auto font-semibold text-lg text-white">3</h1>
-              </div>
-              <div class="order-1 bg-gray-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
-                <h3 class="mb-3 font-bold text-gray-800 text-xl">Lorem Ipsum</h3>
-                <p class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-              </div>
-            </div>
-
-            <!-- left timeline -->
-            <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
-              <div class="order-1 w-5/12"></div>
-              <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
-                <h1 class="mx-auto text-white font-semibold text-lg">4</h1>
-              </div>
-              <div class="order-1 bg-red-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
-                <h3 class="mb-3 font-bold text-white text-xl">Lorem Ipsum</h3>
-                <p class="text-sm font-medium leading-snug tracking-wide text-white text-opacity-100">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-              </div>
-            </div> */}
-
-          </div>
-        </div>
+            </li>
+          )
+        }   
+        </ol>
       </div>
     </>
   );
