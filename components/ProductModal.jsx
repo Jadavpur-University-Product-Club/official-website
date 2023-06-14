@@ -43,7 +43,7 @@ export default function MyModal({isOpen, setIsOpen, id, title, description, vide
                     {title}
                   </Dialog.Title>
                   <div className="mt-2">
-                    <iframe className='w-full h-56' src={video_url} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe className='w-full h-56' src={video_url} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                     <p className="text-sm mt-3 font-montserrat">
                       {description}
                     </p>

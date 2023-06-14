@@ -22,7 +22,7 @@ export default function Products() {
                 <h1 className="mx-auto font-semibold text-lg text-white">{idx+1}</h1>
               </span>
               <div className="items-center justify-between p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:flex dark:bg-gray-700 dark:border-gray-600">
-                <iframe className='w-[75vw] h-56 md:w-[50vw] md:h-[30vw] rounded-lg mb-3' src={ele.video_url} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe className='w-[75vw] h-56 md:w-[50vw] md:h-[30vw] rounded-lg mb-3' src={ele.video_url} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
               </div>
             </li>
           )
