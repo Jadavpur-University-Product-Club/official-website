@@ -61,12 +61,12 @@ export default function Globe() {
       dataRef.current.controls = new OrbitControls(dataRef.current.camera, dataRef.current.renderer.domElement);
       dataRef.current.controls.enableDamping = true;
       dataRef.current.controls.dynamicDampingFactor = 0.01;
-      dataRef.current.controls.enablePan = false;
-      dataRef.current.controls.minDistance = 200;
-      dataRef.current.controls.maxDistance = 500;
+      dataRef.current.controls.enablePan = true;
+      dataRef.current.controls.minDistance = 300;
+      dataRef.current.controls.maxDistance = 550;
       dataRef.current.controls.rotateSpeed = 0.8;
       dataRef.current.controls.zoomSpeed = 1;
-      dataRef.current.controls.autoRotate = false;
+      dataRef.current.controls.autoRotate = true;
 
       dataRef.current.controls.minPolarAngle = Math.PI / 3.5;
       dataRef.current.controls.maxPolarAngle = Math.PI - Math.PI / 3;
